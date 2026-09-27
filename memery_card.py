@@ -83,8 +83,8 @@ def click_ok():
 app = QApplication([])
 window = QWidget()
 button = QPushButton("Ответить")
-window.resize(500, 300)
-window.setWindowTitle('Memer Card')
+window.resize(600, 400)
+window.setWindowTitle('Карточки для запоминания')
 
 qeustion = QLabel('Выбери правильные ответы:')
 
