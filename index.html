@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Алгоритмика Грозный — Школа программирования для детей</title>
+  <meta name="description" content="Международная школа программирования для детей Алгоритмика в Грозном. Умара Кадырова 21. Тел: 8 (966) 722-22-44.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-mark">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 3 L34 12 V28 L20 37 L6 28 V12 Z" fill="#7C5CFC" stroke="#1E1B4B" stroke-width="2.5" stroke-linejoin="round"/>
+            <path d="M14 20 L18 24 L27 15" stroke="#FFD93D" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="logo-text">Алгоритмика</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#courses">Курсы</a>
+        <a href="#why">Почему мы</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <a href="tel:+79667222244" class="btn btn-phone">
+        <span class="phone-dot"></span>
+        8 (966) 722-22-44
+      </a>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <!-- Декоративные фигуры -->
+    <div class="doodle doodle-star">★</div>
+    <div class="doodle doodle-squiggle">
+      <svg viewBox="0 0 120 40" fill="none"><path d="M2 20 Q 20 2, 40 20 T 80 20 T 118 20" stroke="#FF6B6B" stroke-width="3" stroke-linecap="round" fill="none"/></svg>
+    </div>
+    <div class="doodle doodle-dot-grid"></div>
+    <div class="doodle doodle-triangle"></div>
+    <div class="doodle doodle-plus">+</div>
+
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <span class="hero-badge">
+          <span class="badge-dot"></span>
+          Международная школа · с 2016 года
+        </span>
+
+        <h1 class="hero-title">
+          Учим детей
+          <span class="highlight highlight-yellow">кодить</span>
+          <br>с <span class="highlight highlight-purple">удовольствием</span>
+        </h1>
+
+        <p class="hero-sub">
+          Программирование, дизайн и математика для детей 7–17 лет.
+          Живые занятия, крутые проекты и настоящий результат.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contacts" class="btn btn-primary">
+            Записаться на пробный
+            <svg class="btn-arrow" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#courses" class="btn btn-ghost">
+            Смотреть курсы
+          </a>
+        </div>
+
+        <div class="hero-meta">
+          <div class="hero-meta-item">
+            <strong>5000+</strong>
+            <span>выпускников</span>
+          </div>
+          <div class="hero-meta-item">
+            <strong>80+</strong>
+            <span>городов мира</span>
+          </div>
+          <div class="hero-meta-item">
+            <strong>7–17</strong>
+            <span>лет детям</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Иллюстрация справа -->
+      <div class="hero-visual">
+        <div class="visual-card visual-card-main">
+          <div class="window-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <pre class="code-block"><code><span class="c-purple">def</span> <span class="c-yellow">hello</span>(name):
+    <span class="c-purple">print</span>(<span class="c-coral">"Привет,"</span> + name)
+
+hello(<span class="c-coral">"друг!"</span>)  <span class="c-mint"># → Привет, друг!</span></code></pre>
+        </div>
+
+        <div class="floating-badge badge-a">🐍 Python</div>
+        <div class="floating-badge badge-b">🎮 Scratch</div>
+        <div class="floating-badge badge-c">🤖 Roblox</div>
+        <div class="floating-badge badge-d">🎨 Дизайн</div>
+
+        <div class="hero-blob"></div>
+      </div>
+    </div>
+
+    <!-- Бегущая строка -->
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>Python</span><span class="dot">✦</span>
+        <span>Scratch</span><span class="dot">✦</span>
+        <span>Roblox</span><span class="dot">✦</span>
+        <span>Веб-дизайн</span><span class="dot">✦</span>
+        <span>Математика</span><span class="dot">✦</span>
+        <span>Unity</span><span class="dot">✦</span>
+        <span>Python</span><span class="dot">✦</span>
+        <span>Scratch</span><span class="dot">✦</span>
+        <span>Roblox</span><span class="dot">✦</span>
+        <span>Веб-дизайн</span><span class="dot">✦</span>
+        <span>Математика</span><span class="dot">✦</span>
+        <span>Unity</span><span class="dot">✦</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COURSES ============ -->
+  <section class="section courses" id="courses">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">📚 Курсы</span>
+        <h2 class="section-title">Найди свой <span class="marker">путь</span> в IT</h2>
+        <p class="section-sub">Программы для каждого возраста — от первых шагов до портфолио и профессии.</p>
+      </div>
+
+      <div class="courses-grid">
+
+        <article class="course-card card-yellow">
+          <div class="course-age">7–9 лет</div>
+          <div class="course-emoji">🎮</div>
+          <h3>Первые шаги в Scratch</h3>
+          <p>Игровая логика, анимация и первые собственные игры на визуальном языке.</p>
+          <span class="course-link">Подробнее →</span>
+        </article>
+
+        <article class="course-card card-purple">
+          <div class="course-age">9–11 лет</div>
+          <div class="course-emoji">🧩</div>
+          <h3>Программирование в Minecraft</h3>
+          <p>Учимся кодить, автоматизируя постройки и создавая мини-игры в любимой игре.</p>
+          <span class="course-link">Подробнее →</span>
+        </article>
+
+        <article class="course-card card-mint">
+          <div class="course-age">10–13 лет</div>
+          <div class="course-emoji">🐍</div>
+          <h3>Python: старт</h3>
+          <p>Настоящий код, чат-боты, мини-приложения и понимание алгоритмов.</p>
+          <span class="course-link">Подробнее →</span>
+        </article>
+
+        <article class="course-card card-coral">
+          <div class="course-age">12–17 лет</div>
+          <div class="course-emoji">🌐</div>
+          <h3>Веб-разработка</h3>
+          <p>HTML, CSS, JavaScript — создаём собственные сайты и веб-приложения.</p>
+          <span class="course-link">Подробнее →</span>
+        </article>
+
+        <article class="course-card card-blue">
+          <div class="course-age">10–14 лет</div>
+          <div class="course-emoji">🤖</div>
+          <h3>Roblox Studio</h3>
+          <p>Создание собственных игр и миров в Roblox с использованием Lua.</p>
+          <span class="course-link">Подробнее →</span>
+        </article>
+
+        <article class="course-card card-pink">
+          <div class="course-age">9–14 лет</div>
+          <div class="course-emoji">🎨</div>
+          <h3>Графический дизайн</h3>
+          <p>Композиция, цвет, логотипы и работа в профессиональных редакторах.</p>
+          <span class="course-link">Подробнее →</span>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY US ============ -->
+  <section class="section why" id="why">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">💡 Почему мы</span>
+        <h2 class="section-title">Не просто <span class="marker marker-purple">курсы</span></h2>
+        <p class="section-sub">Мы делаем так, чтобы ребёнок шёл на занятие с радостью, а возвращался с проектом.</p>
+      </div>
+
+      <div class="why-grid">
+
+        <div class="why-item">
+          <div class="why-icon icon-yellow">🚀</div>
+          <h4>Проектный подход</h4>
+          <p>Каждое занятие — маленький проект. К концу курса у ребёнка есть портфолио.</p>
+        </div>
+
+        <div class="why-item">
+          <div class="why-icon icon-purple">👩‍🏫</div>
+          <h4>Опытные педагоги</h4>
+          <p>Преподаватели с IT-опытом, которые умеют говорить с детьми на одном языке.</p>
+        </div>
+
+        <div class="why-item">
+          <div class="why-icon icon-mint">👥</div>
+          <h4>Мини-группы</h4>
+          <p>До 12 человек в группе — каждый ребёнок получает внимание и поддержку.</p>
+        </div>
+
+        <div class="why-item">
+          <div class="why-icon icon-coral">🎯</div>
+          <h4>Понятные результаты</h4>
+          <p>Родители видят прогресс: отчёты, открытые уроки и проекты ребёнка.</p>
+        </div>
+
+        <div class="why-item">
+          <div class="why-icon icon-blue">🌍</div>
+          <h4>Международная платформа</h4>
+          <p>Единая программа Алгоритмики в 80+ городах и 20+ странах мира.</p>
+        </div>
+
+        <div class="why-item">
+          <div class="why-icon icon-pink">💻</div>
+          <h4>Собственная IT-платформа</h4>
+          <p>Учиться можно офлайн в классе и повторять дома в личном кабинете.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REVIEWS ============ -->
+  <section class="section reviews" id="reviews">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">💬 Отзывы</span>
+        <h2 class="section-title">Что говорят <span class="marker marker-mint">родители</span></h2>
+      </div>
+
+      <div class="reviews-grid">
+
+        <figure class="review-card">
+          <div class="review-quote">“</div>
+          <blockquote>Сын раньше не любил что-то учить, а теперь сам просит добавить ещё один урок программирования. Огромное спасибо команде!</blockquote>
+          <figcaption>
+            <div class="review-avatar" style="background:#FFD93D;">М</div>
+            <div>
+              <strong>Мадина</strong>
+              <span>мама Адама, 10 лет</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="review-card">
+          <div class="review-quote">“</div>
+          <blockquote>Дочка сделала свой первый сайт за месяц. Мы не ожидали такого результата! Атмосфера в школе очень тёплая.</blockquote>
+          <figcaption>
+            <div class="review-avatar" style="background:#7C5CFC;color:#fff;">Р</div>
+            <div>
+              <strong>Руслан</strong>
+              <span>папа Амины, 12 лет</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="review-card">
+          <div class="review-quote">“</div>
+          <blockquote>Ходим на Python и веб-разработку. Преподаватели — настоящие профи, объясняют понятно и с юмором. Рекомендую!</blockquote>
+          <figcaption>
+            <div class="review-avatar" style="background:#4ECDC4;">З</div>
+            <div>
+              <strong>Зарема</strong>
+              <span>мама Ислама, 14 лет</span>
+            </div>
+          </figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTS ============ -->
+  <section class="section contacts" id="contacts">
+    <div class="container">
+      <div class="contacts-card">
+
+        <div class="contacts-left">
+          <span class="section-tag tag-light">📍 Контакты</span>
+          <h2 class="contacts-title">Заходите в гости <br>или звоните!</h2>
+          <p class="contacts-sub">Первое пробное занятие — бесплатно. Познакомимся, покажем класс и подберём курс.</p>
+
+          <ul class="contacts-list">
+            <li>
+              <span class="ci-icon">📍</span>
+              <div>
+                <small>Адрес</small>
+                <strong>г. Грозный, ул. Умара Кадырова, 21</strong>
+              </div>
+            </li>
+            <li>
+              <span class="ci-icon">📞</span>
+              <div>
+                <small>Телефон</small>
+                <a href="tel:+79667222244"><strong>8 (966) 722-22-44</strong></a>
+              </div>
+            </li>
+            <li>
+              <span class="ci-icon">🌐</span>
+              <div>
+                <small>Сайт школы</small>
+                <a href="https://grozny.algoritmika.org" target="_blank" rel="noopener"><strong>grozny.algoritmika.org</strong></a>
+              </div>
+            </li>
+            <li>
+              <span class="ci-icon">🕒</span>
+              <div>
+                <small>Режим работы</small>
+                <strong>Ежедневно, 09:00 — 21:00</strong>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contacts-form" onsubmit="event.preventDefault();">
+          <h3>Записаться на пробный урок</h3>
+
+          <label>
+            <span>Имя родителя</span>
+            <input type="text" placeholder="Как к вам обращаться?" required>
+          </label>
+
+          <label>
+            <span>Телефон</span>
+            <input type="tel" placeholder="+7 (___) ___-__-__" required>
+          </label>
+
+          <label>
+            <span>Возраст ребёнка</span>
+            <select required>
+              <option value="">Выберите возраст</option>
+              <option>7–9 лет</option>
+              <option>9–11 лет</option>
+              <option>10–13 лет</option>
+              <option>12–17 лет</option>
+            </select>
+          </label>
+
+          <button type="submit" class="btn btn-primary btn-wide">
+            Отправить заявку
+            <svg class="btn-arrow" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+
+          <small class="form-note">Нажимая кнопку, вы соглашаетесь с политикой обработки данных.</small>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <span class="logo-mark">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M20 3 L34 12 V28 L20 37 L6 28 V12 Z" fill="#FFD93D" stroke="#1E1B4B" stroke-width="2.5" stroke-linejoin="round"/><path d="M14 20 L18 24 L27 15" stroke="#1E1B4B" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="logo-text">Алгоритмика</span>
+        </a>
+        <p>Международная школа программирования для детей 7–17 лет. Грозный, ул. Умара Кадырова, 21.</p>
+      </div>
+
+      <div class="footer-cols">
+        <div>
+          <h5>Разделы</h5>
+          <a href="#courses">Курсы</a>
+          <a href="#why">Почему мы</a>
+          <a href="#reviews">Отзывы</a>
+          <a href="#contacts">Контакты</a>
+        </div>
+        <div>
+          <h5>Контакты</h5>
+          <a href="tel:+79667222244">8 (966) 722-22-44</a>
+          <a href="https://grozny.algoritmika.org" target="_blank" rel="noopener">grozny.algoritmika.org</a>
+          <span>Умара Кадырова, 21</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2025 Алгоритмика · Грозный</span>
+      <span>Сделано с ❤️ для юных программистов</span>
+    </div>
+  </footer>
+
+</body>
+</html>
